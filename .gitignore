@@ -1,2 +1,17 @@
 /build/
 /dist/
+# NetBeans & VS Code settings
+/nbproject/private/
+/.vscode/
+
+# Cache & temporary files
+/cache/
+/lib/
+/sources.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database config
+setting/database.xml

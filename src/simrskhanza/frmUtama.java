@@ -2090,7 +2090,7 @@ public class frmUtama extends javax.swing.JFrame {
 
         tanggal.setEditable(false);
         tanggal.setForeground(new java.awt.Color(50, 70, 50));
-        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "11/08/2025" }));
+        tanggal.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "26/08/2025" }));
         tanggal.setDisplayFormat("dd/MM/yyyy");
         tanggal.setName("tanggal"); // NOI18N
         tanggal.setOpaque(false);
@@ -7317,6 +7317,11 @@ public class frmUtama extends javax.swing.JFrame {
         BtnToolKamnap.setName("BtnToolKamnap"); // NOI18N
         BtnToolKamnap.setPreferredSize(new java.awt.Dimension(107, 38));
         BtnToolKamnap.setVerticalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnToolKamnap.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnToolKamnapMouseClicked(evt);
+            }
+        });
         BtnToolKamnap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnToolKamnapActionPerformed(evt);
@@ -14658,6 +14663,10 @@ private void MnGantiPasswordBtnLogActionPerformed(java.awt.event.ActionEvent evt
         Valid.panggilUrl("antrianmobilejkn.php");
         this.setCursor(Cursor.getDefaultCursor());
     }//GEN-LAST:event_MnInfoMobileJKNActionPerformed
+
+    private void BtnToolKamnapMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnToolKamnapMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnToolKamnapMouseClicked
 
     private void btnKategoriPerpustakaanActionPerformed(java.awt.event.ActionEvent evt) {
         isTutup();

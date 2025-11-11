@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run SIMRS Khanza",
+      "request": "launch",
+      "mainClass": "simrskhanza.SIMRSKhanza",
+      "classPaths": [
+        "bin",
+        "lib/*"
+      ],
+      "vmArgs": "-Xmx2G -Xms512m"
+    }
+  ]
+}
